@@ -36,3 +36,6 @@ mediumBowl = null
 console.log("Content is:", mediumBowl)
 // REMEMBER: We use null when we want to make something empty explicitly.
 // It's not empty by accident - WE made id emtpy.
+
+let addVanilla = false
+console.log("\nShould we add vanilla?", addVanilla)
