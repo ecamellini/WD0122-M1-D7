@@ -9,8 +9,6 @@ console.log("Obviously, it's not a \"real\" kitchen.")
 
 // Another important escape sequence: \n to add a newline.
 console.log("\nLet's start with the ingredients:")
-let butter = 80
-let sugar = 120
 let flour = 200
 
 // flour = "200"
@@ -22,6 +20,13 @@ let flour = 200
 // This was a number, and now we make it a string. Who knows what happens later...
 // JS will never complain. SO, YOU SHOULD BE CAREFUL ABOUT THIS.
 
+// Imagine that we get butter and sugar through a form, the values are inserted by the user
+// For some reason, that form gives us STRINGS
+let butterInput = "80"
+let sugarInput = "120.5"
+// We need numbers. We parse the strings that we received.
+let butter = parseInt(butterInput)
+let sugar = parseFloat(sugarInput) // If you used parseInt, it would ignore the .5
 
 // We can give more than one thing to console.log, using the comma.
 // Everything will be printed on the same line with spaces in between.
