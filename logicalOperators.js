@@ -50,4 +50,6 @@ let shouldWeContactTheUser = isHeightBetween170and180 && doesUserHaveBlueOrBrown
 if (shouldWeContactTheUser === true) {
   // This code gets executed only if shouldWeContactTheUser is true
   console.log("The user has been contacted for the casting.")
+} else {
+  console.log("The user does not meet the requirements for the casting.")
 }

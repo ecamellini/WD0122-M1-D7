@@ -9,6 +9,7 @@ console.log("Obviously, it's not a \"real\" kitchen.")
 
 // Another important escape sequence: \n to add a newline.
 console.log("\nLet's start with the ingredients:")
+let addVanilla = true
 let flour = 200
 
 // flour = "200"
@@ -46,11 +47,20 @@ console.log("\nLet's also add flour.")
 mediumBowl += flour // EXACTLY LIKE WRITING mediumBowl = mediumBowl + flour
 console.log("The content now is:", mediumBowl)
 
+console.log("\nShould we add vanilla?", addVanilla)
+
+// I have 0.5 of vanilla, I want to add it only in case addVanilla is true
+if (addVanilla === true) {
+  console.log("We are adding also some vanilla :)")
+  mediumBowl += 0.5
+}
+
+// AFTER THE IF STATEMENT, THE EXECUTION GOES BACK TO NORMAL.
+// The following instructions are executed in any case.
+console.log("\nThe mix is ready. Here it is:", mediumBowl)
+
 console.log("\nWe are done. We empty the bowl.")
 mediumBowl = null
 console.log("Content is:", mediumBowl)
 // REMEMBER: We use null when we want to make something empty explicitly.
 // It's not empty by accident - WE made id emtpy.
-
-let addVanilla = false
-console.log("\nShould we add vanilla?", addVanilla)
